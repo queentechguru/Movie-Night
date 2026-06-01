@@ -32,10 +32,10 @@ let escapeCount = 0;
 const escapeMsgs = [
   "❌ Nope. Bye. 🏃‍♂️",
   "❌ I said no. Stop.",
-  "❌ SIR. I am RUNNING.",
+  "❌ I am RUNNING.",
   "❌ This is cardio now.",
   "❌ You can't catch me 🤣",
-  "❌ Bro. Give up.",
+  "❌ Hun Give up.",
   "❌ I have places to be.",
   "❌ Still no. Still running.",
   "❌ You're embarrassing yourself.",
