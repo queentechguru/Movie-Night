@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLASSIFIED: Operation Movie Night</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Scanline overlay -->
+  <div class="scanlines"></div>
+
+  <!-- Film grain -->
+  <div class="grain"></div>
+
+  <!-- Floating popcorn emojis -->
+  <div class="floaters" id="floaters"></div>
+
+  <main class="container">
+
+    <!-- STAMP -->
+    <div class="stamp" id="stamp">TOP SECRET</div>
+
+    <!-- Header -->
+    <header class="brief-header">
+      <div class="case-number">CASE NO: 0011 // ENUGU, NIGERIA–CUMBRIA, ENGLAND</div>
+      <h1 class="title">OPERATION<br><span class="title-accent">MOVIE NIGHT</span></h1>
+      <div class="subtitle">⚡ AN OFFICIAL SUMMONS ⚡</div>
+    </header>
+
+    <!-- Divider -->
+    <div class="divider">
+      <span>● ● ●</span>
+    </div>
+
+    <!-- To/From block -->
+    <section class="brief-meta">
+      <div class="meta-row">
+        <span class="meta-label">TO:</span>
+        <span class="meta-val">That 6.4ft Tall man in Cumbria, England 🇬🇧 (you know yourself)</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">FROM:</span>
+        <span class="meta-val">Your favourite Chocolate Nigerian Hun 🇳🇬 (the only one that matters)</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">SUBJECT:</span>
+        <span class="meta-val">Mandatory Movie Night, Attendance is NOT optional*</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">PRIORITY:</span>
+        <span class="meta-val priority-badge">🔴 EXTREMELY URGENT</span>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider"><span>▬▬▬▬▬▬▬▬▬▬</span></div>
+
+    <!-- Mission Brief -->
+    <section class="mission-body">
+      <h2 class="section-title">📋 MISSION BRIEFING</h2>
+      <p>
+        Intelligence reports confirm that two individuals, one based in Enugu, Nigeria, one suspiciously located in Cumbria, England, have recently made contact and are showing promising signs of compatibility. 
+        This mission is critical. Scientists agree that how two people handle their first movie pick reveals approximately 50% of their personality. No pressure though. Totally no pressure. Further bonding is required. Immediately!!!
+      </p>
+      <p>
+        You are hereby summoned for a <strong>Joint Cross-Continental Movie Night Operation <strong>"Darling, Pick Something you'd love.</strong> Codename: "Let's See If We Actually Have the Same Taste or If This Is a Problem."</strong>
+      </p>
+      <p>
+        Do not be alarmed. No physical travel is required, just your WhatsApp, your Netflix, and that face of yours on camera. Which, for the record, is a very welcome addition to this operation. 🎥
+      </p>
+    </section>
+
+    <!-- Mission Details -->
+    <section class="mission-details">
+      <h2 class="section-title">🎬 OPERATION DETAILS</h2>
+      <div class="detail-grid">
+        <div class="detail-card">
+          <div class="detail-icon">📺</div>
+          <div class="detail-label">SCREEN SOURCE</div>
+          <div class="detail-value">YOUR Netflix<br><small>(yes, yours. You're welcome.)</small></div>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">📱</div>
+          <div class="detail-label">COMMS CHANNEL</div>
+          <div class="detail-value">WhatsApp Video Call<br><small>(screen share mode, please)</small></div>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">🌍</div>
+          <div class="detail-label">LOCATION A</div>
+          <div class="detail-value">Enugu, Nigeria 🇳🇬<br><small>(where the real feminine boss is)</small></div>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">☕</div>
+          <div class="detail-label">LOCATION B</div>
+          <div class="detail-value">Cumbria, England 🇬🇧<br><small>(cold but I admire u)</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rules -->
+    <section class="rules-section">
+      <h2 class="section-title">⚠️ RULES OF ENGAGEMENT</h2>
+      <ul class="rules-list">
+        <li>🍿 Snacks are Optional. Period.</li>
+        <li>📵 No falling asleep mid-movie (you know I'm guilty of that, LOL)</li>
+        <li>🎬 Movie selection must be you at first — no horror please, I can't watch while you're not by my side</li>
+        <li>😂 Laughing together across 4,000 miles is absolutely allowed</li>
+        <li>💬 Saying "OMG did you see that?!" on a 3-second lag is encouraged</li>
+        <li>❤️ Being cute is compulsory. You already passed this one.</li>
+      </ul>
+    </section>
+
+    <!-- RSVP -->
+    <section class="rsvp-section">
+      <h2 class="section-title">📋 YOUR RESPONSE IS REQUIRED</h2>
+      <p class="rsvp-note">*The asterisk from earlier? Yeah, this is what it was about.</p>
+
+      <!-- Big obvious NO button -->
+      <div class="rsvp-buttons">
+        <button class="btn-no" id="btnNo">
+          ❌ No thanks, I'd rather stare at my ceiling
+        </button>
+      </div>
+
+      <p class="dare-text">P.S. Try clicking No. I dare you. 😏</p>
+
+      <!-- Tiny hidden YES -->
+      <div class="yes-zone">
+        <p class="yes-hint" id="yesHint"></p>
+        <button class="btn-yes" id="btnYes" onclick="handleYes()">
+          yes
+        </button>
+        <p class="yes-label" id="yesLabel">(yes is somewhere here if you finally give up)</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="brief-footer">
+      <div class="footer-stamp">CLASSIFIED // EYES ONLY // HIM ONLY</div>
+      <p>This message will self-destruct if you choose No.<br>
+      (Actually it won't. But I'll pout. For days.)</p>
+    </footer>
+
+  </main>
+
+  <!-- YES MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box" id="modalBox">
+      <div class="modal-emoji">🎉🍿🎬</div>
+      <h2 class="modal-title">MISSION ACCEPTED!</h2>
+      <p class="modal-msg">
+        Excellent choice, Agent Aaron.<br>
+        <strong>Prepare your Netflix. Prepare your couch. Prepare your face</strong> — 
+        because I'm about to be staring at it all night. 😍
+      </p>
+      <p class="modal-msg">
+        I'll text you the time. Don't be late.<br>
+      </p>
+      <div class="modal-emoji">🇳🇬❤️🇬🇧</div>
+      <button class="modal-close" onclick="closeModal()">Roger That. I'm Ready 🫡</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
